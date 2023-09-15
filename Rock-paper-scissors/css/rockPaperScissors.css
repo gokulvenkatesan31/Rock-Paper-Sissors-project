@@ -1,0 +1,49 @@
+.img-size{
+  width: 70px;
+  height:70px;
+}
+.background{
+  text-align: center;
+  background-color: rgb(138, 168, 138);
+  margin-top: 20px;
+}
+.btn{
+  background-color: black;
+  padding: 25px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border-width: 0px;
+}
+.result,
+.score,
+.point{
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: rgb(29, 28, 28);
+}
+.reset-btn{
+  background-color: rgb(187, 22, 22);
+  color: black;
+  border-width: 0px;
+  height: 30px;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.reset-btn:hover{
+  background-color: rgb(245, 48, 48);
+}
+.auto{
+  background-color: rgb(63, 62, 62);
+  color: rgb(247, 243, 243);
+  border-width: 0px;
+  height: 30px;
+  width: 120px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.auto:hover{
+  background-color: rgb(85, 84, 84);
+}

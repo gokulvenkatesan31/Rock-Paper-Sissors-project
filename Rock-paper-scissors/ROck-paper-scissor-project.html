@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper</title>
+    <link rel="stylesheet" href="css/rockPaperScissors.css">
+    <style>
+      
+    </style>
+  </head>
+  <body class="background">
+    <div >
+        <button class="rock-btn btn js-rock-btn" ><img class="img-size" src="img/rock-emoji.png" alt=""></button>
+        <button class="btn paper-btn js-paper-btn" ><img class="img-size"  src="img/paper-emoji.png" alt=""></button>
+        <button class="btn scissor-btn js-scissor-btn" ><img class="img-size"  src="img/scissors-emoji.png" alt=""></button>
+    </div>
+    <p class="js-result result "></p>
+    <p class="js-point point"></p>
+    <p class="js-score score"></p>
+    <button onclick="
+        score.player=0;
+        score.computer=0;
+        score.tie=0;
+        localStorage.removeItem('score')
+        document.querySelector('.js-score').innerHTML=`player: ${score.player}  ,  computer:  ${score.computer} , Tie:  ${score.tie}`
+    " class="reset-btn">reset</button>
+    <button class="js-auto auto" onclick="
+    if(document.querySelector('.js-auto').innerHTML==='auto play'){
+      document.querySelector('.js-auto').innerHTML='stop auto play';
+      auto();
+    }else{
+      document.querySelector('.js-auto').innerHTML='auto play';
+      clearInterval(intervelver)
+    }">auto play</button>
+    <script src="js/rock-paper-scissor-project.js"></script>
+  </body>
+</html>
